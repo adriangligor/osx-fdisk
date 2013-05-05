@@ -335,9 +335,9 @@ MBR_parse_one_spec(char *line, disk_t *disk, mbr_t *mbr, int pn)
     part->scyl = parse_number(args[4], 0, 10);
     part->shead = parse_number(args[5], 0, 10);
     part->ssect = parse_number(args[6], 0, 10);	  
-    part->scyl = parse_number(args[7], 0, 10);
-    part->shead = parse_number(args[8], 0, 10);
-    part->ssect = parse_number(args[9], 0, 10);
+    part->ecyl = parse_number(args[7], 0, 10);
+    part->ehead = parse_number(args[8], 0, 10);
+    part->esect = parse_number(args[9], 0, 10);
     if (null_arg(args[0])) {
       PRT_fix_BN(disk, part, pn);
     }
