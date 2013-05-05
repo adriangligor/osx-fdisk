@@ -6,14 +6,134 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BBE0ED0B1736AC91009307A3 /* auto.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECE81736AC06009307A3 /* auto.c */; };
+		BBE0ED0C1736AC91009307A3 /* cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECEA1736AC06009307A3 /* cmd.c */; };
+		BBE0ED0D1736AC91009307A3 /* disk.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECEC1736AC06009307A3 /* disk.c */; };
+		BBE0ED0E1736AC91009307A3 /* fdisk.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECEF1736AC06009307A3 /* fdisk.c */; };
+		BBE0ED0F1736AC91009307A3 /* getrawpartition.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECF01736AC06009307A3 /* getrawpartition.c */; };
+		BBE0ED101736AC91009307A3 /* mbr.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECF21736AC06009307A3 /* mbr.c */; };
+		BBE0ED111736AC91009307A3 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECF51736AC06009307A3 /* misc.c */; };
+		BBE0ED121736AC91009307A3 /* opendev.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECF71736AC06009307A3 /* opendev.c */; };
+		BBE0ED131736AC91009307A3 /* part.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECF81736AC06009307A3 /* part.c */; };
+		BBE0ED141736AC91009307A3 /* user.c in Sources */ = {isa = PBXBuildFile; fileRef = BBE0ECFA1736AC06009307A3 /* user.c */; };
+		BBE0ED151736ACDF009307A3 /* fdisk.8 in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBE0ECEE1736AC06009307A3 /* fdisk.8 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BBE0ECFF1736AC52009307A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				BBE0ED151736ACDF009307A3 /* fdisk.8 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BBE0ECE81736AC06009307A3 /* auto.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = auto.c; sourceTree = "<group>"; };
+		BBE0ECE91736AC06009307A3 /* auto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = auto.h; sourceTree = "<group>"; };
+		BBE0ECEA1736AC06009307A3 /* cmd.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cmd.c; sourceTree = "<group>"; };
+		BBE0ECEB1736AC06009307A3 /* cmd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cmd.h; sourceTree = "<group>"; };
+		BBE0ECEC1736AC06009307A3 /* disk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = disk.c; sourceTree = "<group>"; };
+		BBE0ECED1736AC06009307A3 /* disk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = disk.h; sourceTree = "<group>"; };
+		BBE0ECEE1736AC06009307A3 /* fdisk.8 */ = {isa = PBXFileReference; lastKnownFileType = text; path = fdisk.8; sourceTree = "<group>"; };
+		BBE0ECEF1736AC06009307A3 /* fdisk.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fdisk.c; sourceTree = "<group>"; };
+		BBE0ECF01736AC06009307A3 /* getrawpartition.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = getrawpartition.c; sourceTree = "<group>"; };
+		BBE0ECF11736AC06009307A3 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		BBE0ECF21736AC06009307A3 /* mbr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mbr.c; sourceTree = "<group>"; };
+		BBE0ECF31736AC06009307A3 /* mbr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mbr.h; sourceTree = "<group>"; };
+		BBE0ECF41736AC06009307A3 /* mbrcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mbrcode.h; sourceTree = "<group>"; };
+		BBE0ECF51736AC06009307A3 /* misc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		BBE0ECF61736AC06009307A3 /* misc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		BBE0ECF71736AC06009307A3 /* opendev.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = opendev.c; sourceTree = "<group>"; };
+		BBE0ECF81736AC06009307A3 /* part.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = part.c; sourceTree = "<group>"; };
+		BBE0ECF91736AC06009307A3 /* part.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = part.h; sourceTree = "<group>"; };
+		BBE0ECFA1736AC06009307A3 /* user.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = user.c; sourceTree = "<group>"; };
+		BBE0ECFB1736AC06009307A3 /* user.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user.h; sourceTree = "<group>"; };
+		BBE0ECFC1736AC06009307A3 /* util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		BBE0ED011736AC52009307A3 /* fdisk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fdisk; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBE0ECFE1736AC52009307A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		BBE0ECE01736ABC7009307A3 = {
 			isa = PBXGroup;
 			children = (
+				BBE0ECE71736AC06009307A3 /* src */,
+				BBE0ED021736AC52009307A3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		BBE0ECE71736AC06009307A3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BBE0ECE81736AC06009307A3 /* auto.c */,
+				BBE0ECE91736AC06009307A3 /* auto.h */,
+				BBE0ECEA1736AC06009307A3 /* cmd.c */,
+				BBE0ECEB1736AC06009307A3 /* cmd.h */,
+				BBE0ECEC1736AC06009307A3 /* disk.c */,
+				BBE0ECED1736AC06009307A3 /* disk.h */,
+				BBE0ECEE1736AC06009307A3 /* fdisk.8 */,
+				BBE0ECEF1736AC06009307A3 /* fdisk.c */,
+				BBE0ECF01736AC06009307A3 /* getrawpartition.c */,
+				BBE0ECF11736AC06009307A3 /* Makefile */,
+				BBE0ECF21736AC06009307A3 /* mbr.c */,
+				BBE0ECF31736AC06009307A3 /* mbr.h */,
+				BBE0ECF41736AC06009307A3 /* mbrcode.h */,
+				BBE0ECF51736AC06009307A3 /* misc.c */,
+				BBE0ECF61736AC06009307A3 /* misc.h */,
+				BBE0ECF71736AC06009307A3 /* opendev.c */,
+				BBE0ECF81736AC06009307A3 /* part.c */,
+				BBE0ECF91736AC06009307A3 /* part.h */,
+				BBE0ECFA1736AC06009307A3 /* user.c */,
+				BBE0ECFB1736AC06009307A3 /* user.h */,
+				BBE0ECFC1736AC06009307A3 /* util.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		BBE0ED021736AC52009307A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBE0ED011736AC52009307A3 /* fdisk */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBE0ED001736AC52009307A3 /* fdisk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBE0ED081736AC52009307A3 /* Build configuration list for PBXNativeTarget "fdisk" */;
+			buildPhases = (
+				BBE0ECFD1736AC52009307A3 /* Sources */,
+				BBE0ECFE1736AC52009307A3 /* Frameworks */,
+				BBE0ECFF1736AC52009307A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fdisk;
+			productName = fdisk;
+			productReference = BBE0ED011736AC52009307A3 /* fdisk */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		BBE0ECE11736ABC7009307A3 /* Project object */ = {
@@ -29,12 +149,34 @@
 				en,
 			);
 			mainGroup = BBE0ECE01736ABC7009307A3;
+			productRefGroup = BBE0ED021736AC52009307A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				BBE0ED001736AC52009307A3 /* fdisk */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBE0ECFD1736AC52009307A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE0ED0B1736AC91009307A3 /* auto.c in Sources */,
+				BBE0ED0C1736AC91009307A3 /* cmd.c in Sources */,
+				BBE0ED0D1736AC91009307A3 /* disk.c in Sources */,
+				BBE0ED0E1736AC91009307A3 /* fdisk.c in Sources */,
+				BBE0ED0F1736AC91009307A3 /* getrawpartition.c in Sources */,
+				BBE0ED101736AC91009307A3 /* mbr.c in Sources */,
+				BBE0ED111736AC91009307A3 /* misc.c in Sources */,
+				BBE0ED121736AC91009307A3 /* opendev.c in Sources */,
+				BBE0ED131736AC91009307A3 /* part.c in Sources */,
+				BBE0ED141736AC91009307A3 /* user.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		BBE0ECE51736ABC7009307A3 /* Debug */ = {
@@ -49,6 +191,65 @@
 			};
 			name = Release;
 		};
+		BBE0ED091736AC52009307A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BBE0ED0A1736AC52009307A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -60,6 +261,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BBE0ED081736AC52009307A3 /* Build configuration list for PBXNativeTarget "fdisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE0ED091736AC52009307A3 /* Debug */,
+				BBE0ED0A1736AC52009307A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
