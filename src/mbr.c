@@ -338,17 +338,14 @@ MBR_parse_one_spec(char *line, disk_t *disk, mbr_t *mbr, int pn)
     part->ecyl = parse_number(args[7], 0, 10);
     part->ehead = parse_number(args[8], 0, 10);
     part->esect = parse_number(args[9], 0, 10);
-    if (null_arg(args[0])) {
-      PRT_fix_BN(disk, part, pn);
-    }
+    PRT_fix_BN(disk, part, pn);
   } else {
     /* See if they gave no CHS and no start/end */
     if (null_arg(args[0])) {
       errx(1, "You must specify either start sector and size or CHS");
       return -1;
     }
-  }
-  if (!null_arg(args[0])) {
+
     part->bs = parse_number(args[0], next_start, 10);
     part->ns = parse_number(args[1], next_size, 10);
     PRT_fix_CHS(disk, part, pn);
