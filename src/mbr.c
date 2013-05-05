@@ -375,10 +375,8 @@ MBR_parse_spec(FILE *f, disk_t *disk)
   mbr_t *mbr, *head, *prev_mbr;
 
   head = mbr = prev_mbr = NULL;
-  firstoffset = 0;
+  firstoffset = offset = 0;
   do {
-
-    offset = 0;
     for (lineno = 0; lineno < NDOSPART && !feof(f); lineno++) {
         char line[256];
         char *str;
@@ -393,6 +391,8 @@ MBR_parse_spec(FILE *f, disk_t *disk)
 
 	if (mbr == NULL) {
 	    mbr = MBR_alloc(prev_mbr);
+	    mbr->offset = offset;
+	    mbr->reloffset = firstoffset;
 	    if (head == NULL)
 		head = mbr;
 	}
